@@ -3,6 +3,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Happy Birthday</title>
+		<script src="https://kit.fontawesome.com/0313a92c16.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="lib/splide-2.4.21/dist/css/splide.min.css" type="text/css">
 		<link rel="stylesheet" href="css/index.css" type="text/css">
 	</head>
 	<body>
@@ -26,29 +28,80 @@
 		<div class="coupon-wrapper">
 			<div id="coupon" class="scale-out">
 				<div class="coupon-name">黃凱媚 KeiMay</div>
-				<div class="coupon-header">YAY! It's your 
-					<span class="red">B</span>
-					<span class="orange">I</span>
-					<span class="yellow">R</span>
-					<span class="green">T</span>
-					<span class="blue">H</span>
-					<span class="turquoise">D</span>
-					<span class="purple">A</span>
-					<span class="grey">Y</span>!
+				<div class="coupon-header">
+					<span class="red">H</span>
+					<span class="orange">A</span>
+					<span class="yellow">P</span>
+					<span class="green">P</span>
+					<span class="blue">Y</span>
+					<br>
+					<span class="turquoise">B</span>
+					<span class="purple">I</span>
+					<span class="red">R</span>
+					<span class="orange">T</span>
+					<span class="yellow">H</span>
+					<span class="green">D</span>
+					<span class="blue">A</span>
+					<span class="turquoise">Y</span>
+					<span class="purple">!</span>
 				</div>
 				<div class="coupon-body">FREE HAIRDO ON US!</div>
 				<div class="coupon-footer">
-					<div class="coupon-desc">on your next visit</div>
-					<div>Valid Forever~</div>
+					<div class="coupon-desc">+ 3D Waist Pillow</div>
+					<div class="coupon-valid">validity: forever</div>
 				</div>
 			</div>
 			<div id="buttons" class="hide-buttons">
-				<button id="details">Details</button>
+				<button id="details">Greetings</button>
 				<button id="close">Close</button>
 			</div>
 		</div>
+		<div id="people" class="splide" data-splide='{"type":"loop", "arrows":false}'>
+			<div id="people-exit" class="people-exit"><i class="fas fa-times fa-3x"></i></div>
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<div class="people-card">
+							<img src="images/huiming.jpg" alt="huiming" class="people-image">
+							<div class="people-container">
+								<div class="people-name">Hui Ming</div>
+								<div class="people-text">Hello World</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="people-card">
+							<img src="images/hongsin.jpg" alt="hongsin" class="people-image">
+							<div class="people-container">
+								<div class="people-name">Hong Sin</div>
+								<div class="people-text">Hello World</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="people-card">
+							<img src="images/chunming.jpg" alt="chunming" class="people-image">
+							<div class="people-container">
+								<div class="people-name">Chun Ming</div>
+								<div class="people-text">Hello World</div>
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="people-card">
+							<img src="images/meow_roar.gif" alt="Avatar" class="people-image">
+							<div class="people-container">
+								<div class="people-name">Sean</div>
+								<div class="people-text">Hello World</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<!-- Javascript imports -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="lib/jquery/jquery-3.6.0.min.js"></script>
+		<script src="lib/splide-2.4.21/dist/js/splide.min.js"></script>
 		<script type="text/javascript" src="index.js"></script>
 		<!------------------------>
 	</body>

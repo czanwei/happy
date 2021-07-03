@@ -4,7 +4,13 @@ $(document).ready(function() {
 	var coupon = $('#coupon');
 	var buttons = $('#buttons');
 	var close = $('#close');
-	
+	var details = $('#details');
+	var peopleExit = $('#people-exit');
+	var people = $('#people');
+
+	new Splide('.splide').mount();
+	people.hide();
+
 	envelope.click(function() {
 		envelopeWrapper.addClass('no-click');
 		openEnvelope();
@@ -18,6 +24,12 @@ $(document).ready(function() {
 		setTimeout(() => {
 			closeEnvelope();
 		}, 1000);
+	});
+	details.click(function() {
+		people.show();
+	});
+	peopleExit.click(function() {
+		people.hide();
 	});
 	
 	function openEnvelope() {
