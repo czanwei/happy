@@ -313,7 +313,8 @@ body {
 }
 .people-card {
 	height: 100%;
-	padding-top: 170px;
+	width: 100vw;
+	padding-top: 100px;
 	text-align: center;
 }
 .people-image {
