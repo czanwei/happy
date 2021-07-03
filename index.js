@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var envelopeWrapper = $('#envelope-wrapper');
 	var envelope = $('#envelope');
-	var letter = $('#letter');
+	var coupon = $('#coupon');
 	var buttons = $('#buttons');
 	var close = $('#close');
 	
@@ -9,12 +9,12 @@ $(document).ready(function() {
 		envelopeWrapper.addClass('no-click');
 		openEnvelope();
 		setTimeout(() => {
-			openLetter();
+			openCouponr();
 		}, 1700);
 	});
 	close.click(function() {
 		envelopeWrapper.removeClass('no-click');
-		closeLetter();
+		closeCoupon();
 		setTimeout(() => {
 			closeEnvelope();
 		}, 1000);
@@ -28,17 +28,17 @@ $(document).ready(function() {
 		envelope.addClass('close')
 			.removeClass('open');
 	}
-	function openLetter() {
-		letter.addClass('scale-in')
+	function openCouponr() {
+		coupon.addClass('scale-in')
 			.removeClass('scale-out');
 		buttons.removeClass('hide-buttons');
 		setTimeout(() => {
 			envelopeWrapper.addClass('blur');
 		}, 700);
 	}
-	function closeLetter() {
+	function closeCoupon() {
 		envelopeWrapper.removeClass('blur');
-		letter.addClass('scale-out')
+		coupon.addClass('scale-out')
 			.removeClass('scale-in');
 		buttons.addClass('hide-buttons');
 	}

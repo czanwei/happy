@@ -1,12 +1,12 @@
 #envelope {
 	position: relative;
-	width: 550px;
-	height: 380px;
+	width: 350px;
+	height: 190px;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	margin-left: auto;
 	margin-right: auto;
-	top: 30%;
+	top: 35%;
 	background-color: #00334c;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 	z-index: 1;
@@ -18,17 +18,17 @@
 	z-index: 3;
 }
 .flap {
-	border-left: 275px solid transparent;
-	border-right: 275px solid transparent;
-	border-bottom: 180px solid transparent;
-	border-top: 200px solid #00334c;
+	border-left: 175px solid transparent;
+	border-right: 175px solid transparent;
+	border-bottom: 90px solid transparent;
+	border-top: 110px solid #00334c;
 	transform-origin: top;
 }
 .pocket {
-	border-left: 275px solid #0077b2;
-	border-right: 275px solid #0077b2;
-	border-bottom: 182px solid #006da3;
-	border-top: 198px solid transparent;
+	border-left: 175px solid #0077b2;
+	border-right: 175px solid #0077b2;
+	border-bottom: 90px solid #006da3;
+	border-top: 100px solid transparent;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 }
@@ -38,8 +38,7 @@
 	width: 93%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 90%;
-	top: 5%;
+	height: 100%;
 	border-radius: 6px;
 	box-shadow: 0 2px 26px rgba(0, 0, 0, .12);
 }
@@ -89,13 +88,13 @@
 	z-index: 1;
 }
 .open .letter {
-	transform: translatey(-100px);
+	transform: translatey(-80px);
 	transition: transform 0.4s 0.6s ease, z-index 0.6s;
 	z-index: 2;
 }
 .hearts {
 	position: absolute;
-	top: 180px;
+	top: 100px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -172,18 +171,18 @@ body {
 .envelope-wrapper {
 	height: 98vh;
 }
-.letter-wrapper {
+.coupon-wrapper {
 	position: absolute;
 	top: 1vh;
 	height: 98vh;
 	width: 98%;
 }
-#letter {
+#coupon {
 	position: relative;
-	top: 13%;
+	top: 15%;
 	margin: auto;
-	height: 75vh;
-	width: 55vw;
+	height: 60%;
+	width: 90%;
 	background-color: #f0ff57;
 	border-radius: 1em;
 	z-index: 2;
@@ -197,27 +196,31 @@ body {
 	transform: scale(0);
 	opacity: 0.3;
 }
-.letter-name {
-	padding-top: 15px;
-	padding-left: 25px;
-	font-family: cursive;
-	font-size: 1.5em;
-}
-.letter-header {
-	padding-top: 1.3em;
+.coupon-name {
 	text-align: center;
-	font-size: 2em;
+	padding-top: 25px;
+	font-family: fangsong;
+	font-size: 25px;
 }
-.letter-body {
-	padding: 40px 1.8em;
+.coupon-header {
+	padding-top: 25px;
 	text-align: center;
-	font-size: 5.5em;
+	font-size: 20px;
+}
+.coupon-body {
+	padding: 40px 15%;
+	text-align: center;
+	font-size: 60px;
 	color: crimson;
 }
-.letter-footer {
+.coupon-footer {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 25px;
 	opacity: 0.7;
+}
+.coupon-desc {
+	padding-bottom: 5px;
+	font-size: 20px;
 }
 #buttons {
 	position: relative;
@@ -285,24 +288,4 @@ body {
 }
 .grey {
 	color: grey;
-}
-@media only screen and (max-width: 1200px) {
-	.letter-body {
-		font-size: 5em;
-	}
-}
-@media only screen and (max-width: 960px) {
-	.letter-body {
-		font-size: 4em;
-		padding-top: 0.7em;
-	}
-}
-@media only screen and (max-width: 720px) {
-	.letter-header {
-		font-size: 1em;
-	}
-	.letter-body {
-		font-size: 3.5em;
-		padding-top: 1em;
-	}
 }
