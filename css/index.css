@@ -202,29 +202,28 @@ body {
 	opacity: 0.3;
 }
 .coupon-name {
-	padding-top: 25px;
-	font-size: 25px;
+	padding-top: 20px;
+	font-size: 20px;
 }
 .coupon-header {
-	padding-top: 25px;
-	font-size: 33px;
+	padding-top: 20px;
+	font-size: 30px;
 }
 .coupon-body {
-	padding: 45px 25%;
-	font-size: 35px;
+	padding: 30px 25%;
+	font-size: 30px;
 	font-weight: bold;
 }
 .coupon-footer {
-	font-size: 25px;
 	opacity: 0.7;
 }
 .coupon-desc {
-	padding-bottom: 15px;
-	font-size: 15px;
+	padding-bottom: 10px;
+	font-size: 14px;
 	font-weight: bold;	
 }
 .coupon-valid {
-	font-size: 20px;
+	font-size: 17px;
 }
 #buttons {
 	position: relative;
